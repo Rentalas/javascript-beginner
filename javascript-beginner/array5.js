@@ -1,7 +1,7 @@
 function copySorted (arr) {
     return arr
     .slice()
-    .sort()
+    .sort();
 };
 
 const arr = ["HTML", "JavaScript", "CSS"];
