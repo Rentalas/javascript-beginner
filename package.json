@@ -1,0 +1,24 @@
+{
+  "name": "javascript-beginner",
+  "version": "1.0.0",
+  "description": "learning js project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./main.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rentalas/javascript-beginner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rentalas/javascript-beginner/issues"
+  },
+  "homepage": "https://github.com/Rentalas/javascript-beginner#readme",
+  "devDependencies": {
+    "parcel": "^2.5.0",
+    "typescript": "^4.6.4"
+  }
+}

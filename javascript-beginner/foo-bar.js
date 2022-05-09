@@ -49,7 +49,7 @@ const numTransform = num => {
 // foobar(1, 100);
 
 
-const createSequenciolNumbers = (start, end) => {
+const createSequencialNumbers = (start, end) => {
     const length = end - start + 1;
     const arr = Array.from({ length }).fill(1);
     let current = start;
@@ -61,7 +61,7 @@ const createSequenciolNumbers = (start, end) => {
 }
 
 const foobar5 = (start, end) => {
-    const numbers = createSequenciolNumbers(start, end);
+    const numbers = createSequencialNumbers(start, end);
     let resultStr = '';
 
     numbers.forEach(i => {
