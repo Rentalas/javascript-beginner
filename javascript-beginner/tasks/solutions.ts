@@ -1,8 +1,8 @@
 import { Human } from "./tasks";
 
 export const addNumbers = (num: number, ...arg: number[]): number => {
-    if (arg.length === 0){
-    return num;
+    if (arg.length === 0) {
+        return num;
     }
 
     return addNumbers(num + arg[0], ...arg.slice(0));
@@ -22,7 +22,7 @@ const addNumbers2 = (num: number, ...arg: number[]): number => {
     arg.forEach(el => num += el)
     return num;
 }
-  
+
 
 
 const multiplyAll = (arr: Array<number[]>): number => {
@@ -40,9 +40,9 @@ export const camelize = (kebabStr: string): string => {
     splittedStr.forEach((el, i) => {
         if (i === 0) {
             result = el;
-            return; 
+            return;
         };
-            result += el[0].toUpperCase() + el.slice(1)
+        result += el[0].toUpperCase() + el.slice(1)
     });
     return result;
 };
@@ -55,7 +55,7 @@ export const filterRange = (numbers: number[], from: number, end: number): numbe
             return;
         };
 
-        result.push(el); 
+        result.push(el);
     });
 
     return result;
@@ -65,9 +65,35 @@ export const filterRange = (numbers: number[], from: number, end: number): numbe
 
 export const nameMapping = (gamers: Human[]): string[] => {
     let result = [];
-    
+
     gamers.forEach(el => result.push(el.name));
 
+    return result;
+};
+
+
+export const fooBar = (num) => {
+    let result = [];
+
+    num.forEach(el => {
+        if (el % 3 === 0 && el % 5 === 0) {
+            result.push('foobar')
+            return;
+        };
+
+        if (!(el % 3)) {
+            result.push('foo')
+            return;
+        };
+
+        if (!(el % 5)) {
+            result.push('bar')
+            return;
+        };
+
+        result.push(el);
+
+    })
     return result;
 };
 

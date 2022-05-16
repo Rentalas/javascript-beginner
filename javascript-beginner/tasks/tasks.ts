@@ -1,10 +1,8 @@
 // @ts-ignore
-const addNumbers = (num: number, ...arg: number[]): number => {
-};
+const addNumbers = (num: number, ...arg: number[]): number => {};
 
 // @ts-ignore
-const sumArray = (arr: number[]): number => {   
-}
+const sumArray = (arr: number[]): number => {};
 
 // @ts-ignore
 const multiplyAll = (arr: Array<number[]>): number => {};
@@ -20,4 +18,7 @@ export type Human = {name: string, age: number};
 
 // @ts-ignore
 const nameMapping = (gamers: Human[]): string[] => {};
+
+// @ts-ignore
+const numTransform = num => {};
     
