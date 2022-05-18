@@ -14,8 +14,8 @@ export const flatten = (array: any[]): any[] => {
     return result;
 }
 
-export const flatten1 = (array: any[]) => {
-    const flattenArray = array.reduce((acc, el) => {
+export const flatten1 = (array: (unknown | unknown[])[]): unknown[] => {
+    return array.reduce<unknown[]>((acc, el) => {
         if (!Array.isArray(el)) {
             acc.push(el);
             return acc;
@@ -28,6 +28,6 @@ export const flatten1 = (array: any[]) => {
 
     }, [])
 
-    return flattenArray
+   
 }
 

@@ -1,7 +1,7 @@
 export const compact = (array: any[]) => {
     const result = [];
     array.forEach(el => {
-        if (!(el) == false) {
+        if (el) {
             result.push(el);
             return;
         }
@@ -10,8 +10,8 @@ export const compact = (array: any[]) => {
 };
 
 export const compact1 = (array: any[]) => {
-    const compactedArray = array.reduce((acc: any[], el) => {
-        if (!(el) == false) {
+    const compactedArray = array.reduce((acc, el) => {
+        if (el) {
             acc.push(el);
             return acc;
         }
@@ -20,5 +20,5 @@ export const compact1 = (array: any[]) => {
 
     }, [])
 
-    return compactedArray
+    return compactedArray;
 }
