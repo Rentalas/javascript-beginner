@@ -22,11 +22,5 @@ export const drop1 = (array: any[], num: number): number[] => {
 
 
 export const drop2 = (array: any[], num: number): number[] => 
-// {
-//     return array.filter((el, i) => {
-//         if (i >= num) {
-//             return el;
-//         } 
-//     })
-// }
+
 array.filter((el, index) => index >= num)
