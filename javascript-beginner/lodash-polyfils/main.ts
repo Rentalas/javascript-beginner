@@ -6,6 +6,9 @@ import { fill } from "./array-method/fill";
 import { flatten, flatten1, } from "./array-method/flatten";
 import { flattenDeep, flattenDeep1 } from "./array-method/flattenDeep";
 import { flattenDepth } from "./array-method/flattenDepth";
+import { pull } from "./array-method/pull";
+import { pullAt } from "./array-method/pullAt";
+// import { pullAt } from "./array-method/pullAt";
 
 
 // console.log(flatten1([1, [2, [3, [4]], 5]]))
@@ -15,10 +18,12 @@ import { flattenDepth } from "./array-method/flattenDepth";
 // console.log(drop([0, 0, 0, 0, 0], 3))
 // console.log(drop1([0, 0, 0, 0, 0], 3))
 // console.log(drop2([0, 1, 2, 3, 4], 0))
-console.log(fill([1, 2, 3, 4, 5, 6], 33, 1, 4))
+// console.log(fill([1, 2, 3, 4, 5, 6], 33, 1, 4))
 // console.log(flattenDeep([1, [2, [3, [4]], 5]]))
 // console.log(flattenDeep1([1, [2, [3, [4]], 5]]))
 // console.log(flattenDepth([[[[1, [2, [3, [4]], 5]]]]], 3))
 // console.log(flattenDepth1([[[[1, [2, [3, [4]], 5]]]]], 1))
 // console.log(flattenDepth2([[[[1, [2, [3, [4]], 5]]]]], 3))
 // console.log(dropRight([1, 2, 3, 4, 5], 2))
+// console.log(pull([1, 2, 2, 1, 2, 3, NaN], 1, 3, NaN))
+console.log(pullAt([1,3,8,9,11,2], 4, 5))
