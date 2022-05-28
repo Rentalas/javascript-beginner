@@ -1,4 +1,6 @@
 
+import { printNumbers, recursivePrintNumbers } from "../for-train/macroTasks";
+import { sumSalaries } from "../for-train/object";
 import { compact, compact1 } from "./array-method/compact";
 import { drop, drop1, drop2 } from "./array-method/drop";
 import { dropRight } from "./array-method/dropRight";
@@ -26,4 +28,7 @@ import { pullAt } from "./array-method/pullAt";
 // console.log(flattenDepth2([[[[1, [2, [3, [4]], 5]]]]], 3))
 // console.log(dropRight([1, 2, 3, 4, 5], 2))
 // console.log(pull([1, 2, 2, 1, 2, 3, NaN], 1, 3, NaN))
-console.log(pullAt([1,3,8,9,11,2], 4, 5))
+// console.log(pullAt([1,3,8,9,11,2], 4, 5))
+// console.log(sumSalaries({"John": 100, "Pete": 300, "Mary": 250},))
+// console.log(printNumbers(2, 6))
+console.log(recursivePrintNumbers(2, 6))
