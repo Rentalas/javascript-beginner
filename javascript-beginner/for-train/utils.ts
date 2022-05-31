@@ -13,6 +13,15 @@ export function showCircle(cx, cy, radius): HTMLElement {
         div.style.width = radius * 2 + 'px';
         div.style.height = radius * 2 + 'px';
     }, 0);
-    
+
     return div;
+}
+
+export const toTitleCase = (word: string): string => {
+    const firstLetter = word[0].toUpperCase();
+    const restOfTheWord = word
+        .slice(1)
+        .toLowerCase();
+
+    return firstLetter + restOfTheWord;
 }
