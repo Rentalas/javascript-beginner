@@ -13,6 +13,7 @@ import { pull } from "./array-method/pull";
 import { pullAt } from "./array-method/pullAt";
 import { showCircle } from "../for-train/utils";
 import { showCircleWithCallBack } from "../for-train/callbacks";
+import { demoGithubUser } from "../for-train/async...await";
 // import { pullAt } from "./array-method/pullAt";
 
 
@@ -44,11 +45,12 @@ import { showCircleWithCallBack } from "../for-train/callbacks";
 //   });
 //   button.addEventListener('click', clickHandler);
 
-const button = document.querySelector('button');
-const clickHandler1 = () => showCircleWithPromise(150, 150, 100)
-    .then(div => {
-        div.classList.add('message-ball');
-        div.append("Hello, world!");
-    });
+// const button = document.querySelector('button');
+// const clickHandler1 = () => showCircleWithPromise(150, 150, 100)
+//     .then(div => {
+//         div.classList.add('message-ball');
+//         div.append("Hello, world!");
+//     });
 
-button.addEventListener('click', clickHandler1);
+// button.addEventListener('click', clickHandler1);
+demoGithubUser().then(user => console.log(user));
