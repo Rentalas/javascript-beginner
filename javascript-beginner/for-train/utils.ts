@@ -25,3 +25,5 @@ export const toTitleCase = (word: string): string => {
 
     return firstLetter + restOfTheWord;
 }
+
+const sameValueZero = (x, y) => x === y || (Number.isNaN(x) && Number.isNaN(y));

@@ -14,6 +14,8 @@ import { pullAt } from "./array-method/pullAt";
 import { showCircle } from "../for-train/utils";
 import { showCircleWithCallBack } from "../for-train/callbacks";
 import { demoGithubUser } from "../for-train/async...await";
+import { uniq3 } from "./array-method/uniq";
+import { intersection } from "./array-method/intersection";
 // import { pullAt } from "./array-method/pullAt";
 
 
@@ -53,4 +55,9 @@ import { demoGithubUser } from "../for-train/async...await";
 //     });
 
 // button.addEventListener('click', clickHandler1);
-demoGithubUser().then(user => console.log(user));
+// demoGithubUser().then(user => console.log(user));
+// console.log(uniq3([1, 3, 5, 2, 1, 2, 1, 3, 4, 3]))
+// console.log(uniq2([1, 3, 5, 2, 1, 2, 1, 3, 4, 3]))
+
+console.log(intersection([[1, 3], [1, 2, 3, 4], [1, 2, 3, 5]]))
+

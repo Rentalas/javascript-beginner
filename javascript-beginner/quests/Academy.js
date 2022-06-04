@@ -1,5 +1,5 @@
 
-let managment = {
+const managment = {
     firstStudent : {
         name1: "KatyaS",
         phone: "0939944442",
@@ -46,7 +46,7 @@ let biology = [
 ];
 
 
-let academy = [managment,
+const academy = [managment,
     law,
     finance,
     biology,
@@ -54,3 +54,9 @@ let academy = [managment,
 
 
 console.log(academy[1][2]);
+
+export const sortedStudentsByAge = (managment) => {
+    academy.sort((a, b) => {
+        return a.age < b.age;
+    });
+}
