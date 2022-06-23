@@ -16,6 +16,8 @@ import { showCircleWithCallBack } from "../for-train/callbacks";
 import { demoGithubUser } from "../for-train/async...await";
 import { uniq3 } from "./array-method/uniq";
 import { intersection } from "./array-method/intersection";
+import { spinWords } from "../for-train/codewars";
+import { password } from "../for-train/zamukanie";
 // import { pullAt } from "./array-method/pullAt";
 
 
@@ -59,5 +61,8 @@ import { intersection } from "./array-method/intersection";
 // console.log(uniq3([1, 3, 5, 2, 1, 2, 1, 3, 4, 3]))
 // console.log(uniq2([1, 3, 5, 2, 1, 2, 1, 3, 4, 3]))
 
-console.log(intersection([[1, 3], [1, 2, 3, 4], [1, 2, 3, 5]]))
+// console.log(intersection([[1, 3], [1, 2, 3, 4], [1, 2, 3, 5]]))
 
+// console.log(spinWords('Hey fellow warriors'))
+
+console.log(password(1)(1))
