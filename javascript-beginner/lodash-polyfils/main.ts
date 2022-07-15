@@ -18,6 +18,7 @@ import { uniq3 } from "./array-method/uniq";
 import { intersection } from "./array-method/intersection";
 import { spinWords } from "../for-train/codewars";
 import { password } from "../for-train/zamukanie";
+import { restConcat } from "../for-train/rest...spread";
 // import { pullAt } from "./array-method/pullAt";
 
 
@@ -65,4 +66,5 @@ import { password } from "../for-train/zamukanie";
 
 // console.log(spinWords('Hey fellow warriors'))
 
-console.log(password(1)(1))
+console.log(restConcat(1, 2, [3, 4], [[5]]))
+console.log(restConcat([1]))
